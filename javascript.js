@@ -45,11 +45,11 @@ function completeItem() {
     if (id === 'todo') {
       data.todo.splice(data.todo.indexOf(value), 1);
       data.complete.push(value);
-      checkImg.src = '/resources/check2.png';
+      checkImg.src = 'resources/check2.png';
     } else {
       data.complete.splice(data.complete.indexOf(value), 1);
       data.todo.push(value);
-      checkImg.src = '/resources/check.png';
+      checkImg.src = 'resources/check.png';
     }
   
     // Check if the item should be added to the completed list or to re-added to the todo list
@@ -71,12 +71,12 @@ function addItemToDo(text) {
     let remove = document.createElement('button');
     remove.classList.add('remove');
     var removeImg = new Image();
-    removeImg.src = '/resources/trash.png';
+    removeImg.src = 'resources/trash.png';
     removeImg.onmouseover = function () {
-        this.src = '/resources/trash2.png';
+        this.src = 'resources/trash2.png';
     };
     removeImg.onmouseleave = function () {
-        this.src = '/resources/trash.png';
+        this.src = 'resources/trash.png';
     }
     remove.appendChild(removeImg);
 
@@ -85,7 +85,7 @@ function addItemToDo(text) {
     let check = document.createElement('button');
     check.classList.add('check');
     checkImg = new Image();
-    checkImg.src = '/resources/check.png';
+    checkImg.src = 'resources/check.png';
     check.appendChild(checkImg);
 
     check.addEventListener('click', completeItem);
