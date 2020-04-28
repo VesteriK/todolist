@@ -52,7 +52,6 @@ function completeItem() {
       checkImg.src = 'resources/check.png';
     }
   
-    // Check if the item should be added to the completed list or to re-added to the todo list
     let target = (id === 'todo') ? document.getElementById('complete'):document.getElementById('todo');
   
     parent.removeChild(item);
