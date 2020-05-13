@@ -160,7 +160,7 @@ ul.todo li .buttons button img {
 
 ul.todo#complete {
     position: relative;
-    padding: 90px 0 0 0;
+    padding: 90px 0 0 15px;
   }
   
   ul.todo#complete:before {
