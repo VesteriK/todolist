@@ -3,8 +3,6 @@ let data = (localStorage.getItem('todoList')) ? JSON.parse(localStorage.getItem(
   complete: []
 };
 
-var checkImg = new Image();
-
 document.getElementById('add').addEventListener('click',function() {
   let value = document.getElementById('item').value;
   if (value) {
